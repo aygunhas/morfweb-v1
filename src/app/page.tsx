@@ -15,7 +15,7 @@ export default function Home() {
         {/* SOL TARAF (Yazılar) */}
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-            Hayalindeki Web Sitesi <span className="text-blue-600">Bir Tık Uzakta</span>
+            Hayalindeki Web Sitesi 1.0 <span className="text-blue-600">Bir Tık Uzakta</span>
           </h1>
           <p className="text-lg text-gray-600">
             Morfweb ile işletmenizi dijital dünyaya taşıyın. Modern, hızlı ve
