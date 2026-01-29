@@ -1,0 +1,13 @@
+{
+  "Navbar": {
+    "home": "Anasayfa",
+    "about": "Kurumsal",
+    "services": "Hizmetler",
+    "portfolio": "Portfolyo",
+    "contact": "İletişim",
+    "offer": "Teklif Al"
+  },
+  "Hero": {
+    "title": "Dijital Çözümler"
+  }
+}

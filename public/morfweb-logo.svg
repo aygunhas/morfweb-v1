@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Morfweb Logo - Icon + Text Design -->
+<!-- Icon: Original icon from vektörel/morfweb.svg (background removed), Text: "morfweb" -->
+<svg version="1.1" id="morfweb-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+     viewBox="0 0 250 60" style="enable-background:new 0 0 250 60;" xml:space="preserve">
+<style type="text/css">
+    /* Light mode colors */
+    .icon-primary { fill: #4a5568; }
+    .icon-secondary { fill: #718096; }
+    .text-primary { fill: #1a202c; }
+    .text-secondary { fill: #4a5568; }
+    
+    /* Dark mode colors */
+    @media (prefers-color-scheme: dark) {
+        .icon-primary { fill: #cbd5e0; }
+        .icon-secondary { fill: #a0aec0; }
+        .text-primary { fill: #f7fafc; }
+        .text-secondary { fill: #cbd5e0; }
+    }
+    
+    /* Dark mode class support (for next-themes) */
+    .dark .icon-primary { fill: #cbd5e0; }
+    .dark .icon-secondary { fill: #a0aec0; }
+    .dark .text-primary { fill: #f7fafc; }
+    .dark .text-secondary { fill: #cbd5e0; }
+</style>
+
+<!-- Icon Group - Original Icon (Background Removed, Vertically Centered) -->
+<g id="icon-group" transform="translate(0, 0)">
+    <!-- Transform: translate to position, scale, then center icon -->
+    <!-- SVG transforms apply right-to-left: translate(center to origin) scale() translate(to position) -->
+    <!-- Vertical centering: icon center at y=30 (aligned with text center) -->
+    <g transform="translate(20, 30) scale(0.20) translate(-194, -198)">
+        <!-- Top Circle Part (from original SVG, st3 class, positive coordinates) -->
+        <path class="icon-primary" d="M155.4,188.1c8.2,0,15.2-5.6,17.1-13.6c3.2-13,10.6-20.9,22.4-20.9c11.7,0,19.2,7.8,22.4,20.9
+	c1.9,7.9,8.9,13.6,17.1,13.6h3.8c12.2,0,20.6-12.1,16.5-23.6c-9.7-27.1-34-42.3-59.7-42.3c-25.8,0-50.1,15.2-59.7,42.3
+            c-4.1,11.5,4.3,23.6,16.5,23.6H155.4L155.4,188.1z" opacity="0.9"/>
+        
+        <!-- Bottom Circle Part (from original SVG, st0 class, positive coordinates) -->
+        <path class="icon-secondary" d="M233.5,209.2c-7.3,0-13.7,5-15.3,12.1c-3,13.9-10.5,22.3-22.7,22.3c-12.2,0-19.7-8.4-22.7-22.3
+	c-1.5-7.1-8-12.1-15.3-12.1h-7.9c-10.4,0-18,10-15.1,19.9c8.7,29.5,34,46,61,46c26.9,0,52.3-16.5,61-46c3-10-4.7-19.9-15.1-19.9
+            H233.5z" opacity="0.85"/>
+    </g>
+</g>
+
+<!-- Text Group - "morfweb" Typography (Combined, Vertically Centered) -->
+<g id="text-group" transform="translate(42, 0)">
+    <!-- Main Text: "morfweb" - Combined with space between morf and web, vertically centered -->
+    <!-- Text centered: viewBox height 60, center at 30, font-size 32, using dy to center vertically -->
+    <text x="0" y="30" class="text-primary" font-family="'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+          font-size="32" font-weight="700" letter-spacing="-0.5px" text-anchor="start" dy="0.35em">
+        morf<tspan class="icon-primary" font-weight="400" opacity="0.9" dx="3">web</tspan>
+    </text>
+</g>
+
+</svg>

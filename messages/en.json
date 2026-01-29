@@ -1,0 +1,13 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "offer": "Get Quote"
+  },
+  "Hero": {
+    "title": "Digital Solutions"
+  }
+}
