@@ -5,7 +5,11 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import { CustomCursor } from "@/components/CustomCursor";
+import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { PreloaderGate } from "@/components/PreloaderGate";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
@@ -47,10 +51,15 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
-            {children}
+            <PreloaderGate>
+              <Navbar />
+              {children}
+              <Footer />
+            </PreloaderGate>
           </ThemeProvider>
         </NextIntlClientProvider>
+        <ScrollProgress />
+        <CustomCursor />
       </body>
     </html>
   );

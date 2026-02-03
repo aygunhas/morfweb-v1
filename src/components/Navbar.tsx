@@ -20,13 +20,15 @@ import {
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+  const [mounted, setMounted] = React.useState(false);
   const t = useTranslations("Navbar");
   const pathname = usePathname();
 
+  React.useEffect(() => setMounted(true), []);
+
   const links = [
     { href: "/", label: t("home") },
-    { href: "/about", label: t("about") },
-    { href: "#hizmetler", label: t("services") },
+    { href: "/services", label: t("services") },
     { href: "/portfolio", label: t("portfolio") },
     { href: "/contact", label: t("contact") },
   ] as const;
@@ -59,7 +61,7 @@ const Navbar = () => {
             <Link
               key={link.href}
               href={link.href}
-              className="text-[13px] leading-[19.5px] tracking-[0.5px] text-muted-foreground transition-colors hover:text-foreground"
+              className="group relative inline-block text-[13px] leading-[19.5px] tracking-[0.5px] bg-gradient-to-r from-foreground via-zinc-600 to-foreground bg-clip-text text-transparent dark:via-zinc-400 [color:transparent]"
               onClick={() => {
                 if (link.href.startsWith("#")) {
                   const element = document.querySelector(link.href);
@@ -70,6 +72,10 @@ const Navbar = () => {
               }}
             >
               {link.label}
+              <span
+                className="absolute -bottom-0.5 left-1/2 h-px w-12 -translate-x-1/2 bg-gradient-to-r from-transparent via-foreground/60 to-transparent opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+                aria-hidden
+              />
             </Link>
           ))}
         </nav>
@@ -91,8 +97,9 @@ const Navbar = () => {
           <LanguageSwitcher />
         </div>
 
-        {/* Mobile & Tablet Menu */}
+        {/* Mobile & Tablet Menu — Radix Sheet sadece mount sonrası (hydration uyumu) */}
         <div className="flex items-center gap-2 lg:hidden">
+          {mounted ? (
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button
@@ -275,6 +282,18 @@ const Navbar = () => {
               </div>
             </SheetContent>
           </Sheet>
+          ) : (
+            <Button
+              variant="ghost"
+              size="icon"
+              className="h-9 w-9"
+              aria-label="Menüyü aç"
+              type="button"
+            >
+              <Menu className="h-5 w-5" />
+              <span className="sr-only">Menüyü aç</span>
+            </Button>
+          )}
         </div>
       </div>
     </header>

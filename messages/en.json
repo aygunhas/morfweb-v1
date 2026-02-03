@@ -1,7 +1,6 @@
 {
   "Navbar": {
     "home": "Home",
-    "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
@@ -9,5 +8,83 @@
   },
   "Hero": {
     "title": "Digital Solutions"
+  },
+  "CTA": {
+    "heading": "READY?",
+    "button": "Start Your Project"
+  },
+  "Preloader": {
+    "word1": "Analysis",
+    "word2": "Design",
+    "word3": "Development",
+    "word4": "Delivery",
+    "slogan": "From idea to launch, your digital partner.",
+    "tagline": "morfweb.com"
+  },
+  "Footer": {
+    "tagline": "Experiences designed for digital excellence.",
+    "exploreTitle": "Explore",
+    "connectTitle": "Connect",
+    "helloTitle": "Say Hello",
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "location": "Istanbul, TR",
+    "copyright": "© 2026 Morfweb Inc. All rights reserved."
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "heading": "Answers to your questions.",
+    "items": {
+      "duration": {
+        "question": "What is the typical delivery timeline for your corporate projects?",
+        "answer": "Delivery timelines depend on project scope and workload. Corporate websites and marketing projects are typically delivered within 4–6 weeks; e‑commerce and admin-panel projects within 8–12 weeks; custom software and mobile applications within 12–20 weeks. After the requirements and scope definition meeting, we provide a written project schedule, which is included as an appendix to the contract."
+      },
+      "process": {
+        "question": "What working model do you follow for your projects?",
+        "answer": "We follow a structured process starting with analysis and strategy, then design approval, development, testing, and go-live. At each stage, defined deliverables are submitted for your approval before we proceed to the next phase. We provide progress updates and, where needed, short sync meetings on a weekly or biweekly basis. This model helps keep expectations clear and supports on-time completion."
+      },
+      "technologies": {
+        "question": "Which technologies and infrastructure do you use in your development process?",
+        "answer": "For web applications we use Next.js, React, and TypeScript; for mobile projects, React Native; on the server side, Node.js and PHP where appropriate. We use PostgreSQL and MySQL for databases, and Vercel, Docker, and GitHub Actions for hosting and continuous integration (CI/CD). We choose current, maintainable technologies that meet security, performance, and scalability standards, and we can adapt to corporate requirements."
+      },
+      "pricing": {
+        "question": "How are your pricing and payment terms structured?",
+        "answer": "We offer fixed project fees or milestone-based payment models. After scope and deliverables are defined, we prepare a detailed quote including line items, estimated duration, and payment terms. An agreed advance is due at project start; the balance is due on delivery or at agreed milestones. Additional scope or revision requests are assessed separately and may result in a separate time and cost proposal."
+      },
+      "revisions": {
+        "question": "How are post-delivery revision and change requests handled?",
+        "answer": "Revision rights specified in the contract cover minor corrections and copy/asset updates within a defined period after delivery (e.g. 14–30 days). Out-of-scope or new feature requests are treated as a separate project or maintenance package; we will provide a time and cost proposal. The number and scope of revisions are clearly defined in the quote and contract."
+      },
+      "support": {
+        "question": "Do you provide technical support and maintenance after project delivery?",
+        "answer": "Yes. We offer a technical support and maintenance package for at least one year after delivery. This includes critical bug fixes, security updates, and minor content/asset updates; response times are specified in the contract. New feature development or major changes are quoted separately. The maintenance agreement can be renewed after the initial term."
+      },
+      "hosting": {
+        "question": "Is hosting and server infrastructure included in the project scope?",
+        "answer": "Hosting is considered based on project type. For corporate web and e‑commerce projects, domain, SSL, and suitable hosting options are outlined in the proposal; managed hosting can be offered if desired. Server setup, backup, and monitoring are offered as a separate scope. If you have existing infrastructure, we plan integration and migration accordingly."
+      },
+      "confidentiality": {
+        "question": "What measures do you take regarding confidentiality and data security?",
+        "answer": "Client data and project information are handled in line with confidentiality principles. Where required, a non-disclosure agreement (NDA) is signed, and access is limited to the project team. Code and design assets are stored in secure environments and are not shared with third parties. We provide guidance on compliance with GDPR and similar regulations as part of the project."
+      },
+      "ownership": {
+        "question": "How are intellectual property and copyright transferred on project delivery?",
+        "answer": "Upon full payment of the project fee, all deliverables defined in the contract (source code, design files, content) are transferred to the client. Third-party licensed components (e.g. fonts, stock imagery) remain subject to their respective licence terms; we inform you of these. After transfer, you may continue the project with your own team or another party; we provide the necessary documentation and handover package."
+      },
+      "maintenance": {
+        "question": "Do you offer long-term maintenance and update agreements?",
+        "answer": "We offer annual or monthly maintenance agreements after project delivery. These can include technical updates, security patches, backup, and monitoring; scope and fee are tailored to your usage. Long-term maintenance keeps your project secure and up to date and gives you priority support in case of urgent issues."
+      }
+    }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "code": "404",
+    "message": "The page you're looking for may have been moved, removed, or never existed.",
+    "backHome": "Back to home",
+    "goBack": "Go back"
   }
 }

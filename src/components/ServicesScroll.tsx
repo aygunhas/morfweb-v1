@@ -94,7 +94,7 @@ function NavItem({
           }`}
         >
           <Icon className="h-5 w-5 shrink-0" aria-hidden />
-          <span className="text-base font-medium lg:text-lg">{service.title}</span>
+          <span className="text-sm font-medium lg:text-base">{service.title}</span>
         </div>
         <AnimatePresence mode="wait">
           {isActive && (
@@ -127,7 +127,7 @@ function ContentCard({
   return (
     <section
       ref={cardRef}
-      className="flex min-h-[80vh] flex-col justify-center pt-16 pb-16 first:pt-0 md:pt-24 md:pb-24 md:first:pt-0"
+      className="flex min-h-[80vh] flex-col justify-center pt-6 pb-6 first:pt-0 md:pt-8 md:pb-8 md:first:pt-0"
       data-service-id={service.id}
     >
       <div className="rounded-2xl border border-zinc-200 bg-white/80 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/50 overflow-hidden">
@@ -183,7 +183,7 @@ export function ServicesScroll() {
   }
 
   return (
-    <section id="hizmetler" className="min-h-screen bg-background">
+    <section id="hizmetler" className="min-h-screen bg-gradient-to-b from-zinc-100 to-zinc-50 dark:from-black dark:to-zinc-950">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 pt-4 pb-20 lg:grid-cols-[340px_1fr] lg:px-8 lg:items-start">
         {/* Sol: Hizmet listesi — sticky, ilk kartın tepesiyle hizalı */}
         <aside className="lg:sticky lg:top-20 lg:self-start">
@@ -219,7 +219,7 @@ export function ServicesScroll() {
           </ContentCard>
 
           <ContentCard service={SERVICES[1]} cardRef={ref1}>
-            <div className="flex items-center justify-center gap-8 p-12">
+            <div className="flex items-center justify-center gap-4 p-12">
               <div className="h-[420px] w-[200px] rounded-[2rem] border-4 border-zinc-800 bg-zinc-900 dark:border-zinc-600 dark:bg-zinc-800 shadow-xl" />
               <div className="h-[420px] w-[200px] rounded-[2rem] border-4 border-zinc-800 bg-zinc-900 dark:border-zinc-600 dark:bg-zinc-800 shadow-xl" />
             </div>
@@ -227,7 +227,7 @@ export function ServicesScroll() {
 
           <ContentCard service={SERVICES[2]} cardRef={ref2}>
             <div className="aspect-[16/10] w-full bg-gradient-to-br from-zinc-50 to-zinc-100 dark:from-zinc-900 dark:to-zinc-800 flex items-center justify-center p-12">
-              <div className="grid grid-cols-3 gap-4 w-full max-w-2xl">
+              <div className="grid grid-cols-3 gap-2 w-full max-w-2xl">
                 {[1, 2, 3].map((i) => (
                   <div
                     key={i}

@@ -20,6 +20,9 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
 
   const currentLanguage = languages.find((lang) => lang.code === locale);
 
@@ -27,15 +30,21 @@ export function LanguageSwitcher() {
     router.replace(pathname, { locale: newLocale });
   };
 
+  const triggerLabel = currentLanguage?.code.toUpperCase() ?? "TR";
+
+  if (!mounted) {
+    return (
+      <Button variant="ghost" size="sm" className="h-9" type="button">
+        <span>{triggerLabel}</span>
+      </Button>
+    );
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button
-          variant="ghost"
-          size="sm"
-          className="h-9"
-        >
-          <span>{currentLanguage?.code.toUpperCase()}</span>
+        <Button variant="ghost" size="sm" className="h-9">
+          <span>{triggerLabel}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

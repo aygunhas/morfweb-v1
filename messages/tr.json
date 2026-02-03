@@ -1,7 +1,6 @@
 {
   "Navbar": {
     "home": "Anasayfa",
-    "about": "Kurumsal",
     "services": "Hizmetler",
     "portfolio": "Portfolyo",
     "contact": "İletişim",
@@ -9,5 +8,83 @@
   },
   "Hero": {
     "title": "Dijital Çözümler"
+  },
+  "CTA": {
+    "heading": "HAZIR MISIN?",
+    "button": "Projeyi Başlat"
+  },
+  "Preloader": {
+    "word1": "Analiz",
+    "word2": "Tasarım",
+    "word3": "Geliştirme",
+    "word4": "Teslim",
+    "slogan": "Fikirden yayına, dijital partneriniz.",
+    "tagline": "morfweb.com"
+  },
+  "Footer": {
+    "tagline": "Dijital mükemmellik için tasarlanmış deneyimler.",
+    "exploreTitle": "Keşfet",
+    "connectTitle": "Bağlantı",
+    "helloTitle": "Merhaba De",
+    "home": "Anasayfa",
+    "services": "Hizmetler",
+    "portfolio": "Portfolyo",
+    "about": "Hakkımızda",
+    "privacy": "Gizlilik Politikası",
+    "location": "İstanbul, TR",
+    "copyright": "© 2026 Morfweb Inc. Tüm hakları saklıdır."
+  },
+  "FAQ": {
+    "title": "Sıkça Sorulan Sorular",
+    "heading": "Merak ettiklerinizin cevapları.",
+    "items": {
+      "duration": {
+        "question": "Kurumsal projelerinizin teslim süresi ne kadardır?",
+        "answer": "Proje kapsamına ve iş yüküne bağlı olarak teslim süreleri değişkenlik gösterir. Kurumsal web siteleri ve tanıtım projeleri ortalama 4–6 hafta, e-ticaret ve yönetim paneli içeren projeler 8–12 hafta, özel yazılım ve mobil uygulama projeleri ise 12–20 hafta aralığında planlanır. İhtiyaç analizi ve kapsam belirleme toplantısı sonrasında size yazılı bir proje takvimi sunulur; bu takvim sözleşme ekinde yer alır."
+      },
+      "process": {
+        "question": "Projelerinizde hangi çalışma modeli uygulanmaktadır?",
+        "answer": "Analiz ve strateji aşamasıyla başlayan, ardından tasarım onayı, geliştirme, test ve canlıya alma aşamalarından oluşan yapılandırılmış bir süreç izliyoruz. Her aşamada belirlenen çıktılar sizin onayınıza sunulur; onay sonrası bir sonraki aşamaya geçilir. Haftalık veya iki haftalık periyotlarla ilerleme raporu ve gerekirse kısa senkronizasyon toplantıları yapılır. Bu model, beklentilerin netleşmesini ve projenin zamanında tamamlanmasını destekler."
+      },
+      "technologies": {
+        "question": "Geliştirme süreçlerinizde hangi teknoloji ve altyapılar kullanılmaktadır?",
+        "answer": "Web uygulamalarında Next.js, React ve TypeScript; mobil projelerde React Native; sunucu tarafında Node.js ve gerektiğinde PHP kullanıyoruz. Veritabanı olarak PostgreSQL ve MySQL; barındırma ve dağıtım için Vercel, Docker ve GitHub Actions ile sürekli entegrasyon (CI/CD) tercih ediyoruz. Güvenlik, performans ve ölçeklenebilirlik standartlarını karşılayan, güncel ve bakımı kolay teknolojiler seçiyoruz; kurumsal gereksinimlere göre uyarlama yapılabilir."
+      },
+      "pricing": {
+        "question": "Fiyatlandırma ve ödeme koşullarınız nasıldır?",
+        "answer": "Sabit proje bedeli veya aşama (milestone) bazlı ödeme modelleri sunuyoruz. Kapsam ve iş listesi netleştirildikten sonra detaylı teklif hazırlanır; teklifte iş kalemleri, tahmini süre ve ödeme vadeleri belirtilir. Proje başlangıcında anlaşılan avans ödemesi alınır; kalan tutar teslimatta veya belirlenen ara teslimlerde tahsil edilir. Ek kapsam veya revizyon talepleri ayrıca değerlendirilir ve gerekirse ek süre ve maliyet teklifi sunulur."
+      },
+      "revisions": {
+        "question": "Teslim sonrası revizyon ve değişiklik talepleri nasıl yönetilir?",
+        "answer": "Sözleşmede belirtilen revizyon hakları, teslimattan sonraki belirli bir süre içinde (örneğin 14–30 gün) küçük düzeltme ve metin/görsel güncellemelerini kapsar. Kapsam dışı veya yeni özellik talepleri ayrı proje veya bakım paketi kapsamında değerlendirilir; size süre ve maliyet teklifi sunulur. Revizyon sayısı ve kapsamı teklif ve sözleşme metninde açıkça tanımlanır."
+      },
+      "support": {
+        "question": "Proje tesliminden sonra teknik destek ve bakım hizmeti sunuluyor mu?",
+        "answer": "Evet. Teslimattan sonra en az 1 yıl süreyle teknik destek ve bakım paketi sunuyoruz. Bu paket kapsamında acil hata düzeltmeleri, güvenlik güncellemeleri ve küçük içerik/görsel güncellemeleri yer alır; yanıt süreleri sözleşmede belirtilir. Yeni özellik geliştirme veya büyük değişiklikler ayrı teklif konusudur. Süre sonunda bakım sözleşmesi yenilenebilir."
+      },
+      "hosting": {
+        "question": "Barındırma ve sunucu altyapısı proje kapsamında mıdır?",
+        "answer": "Barındırma ihtiyacı proje türüne göre değerlendirilir. Kurumsal web ve e-ticaret projelerinde domain, SSL sertifikası ve uygun hosting seçenekleri teklifte belirtilir; isteğe bağlı olarak yönetilen hosting hizmeti sunulabilir. Sunucu kurulumu, yedekleme ve izleme gibi altyapı hizmetleri ayrı bir kapsam olarak teklif edilir. Mevcut altyapınız varsa entegrasyon ve taşıma süreçleri planlanır."
+      },
+      "confidentiality": {
+        "question": "Gizlilik ve veri güvenliği konusunda ne tür önlemler alınıyor?",
+        "answer": "Müşteri verileri ve proje bilgileri gizlilik prensiplerine uygun işlenir. Gerekli durumlarda gizlilik sözleşmesi (NDA) imzalanır; erişim yetkileri proje ekibi ile sınırlı tutulur. Kod ve tasarım dosyaları güvenli ortamlarda saklanır; üçüncü tarafla paylaşım yapılmaz. KVKK ve benzeri mevzuata uyum konusunda proje sürecinde gerekli tavsiyeler verilir."
+      },
+      "ownership": {
+        "question": "Proje tesliminde fikri mülkiyet ve telif hakları nasıl aktarılır?",
+        "answer": "Proje bedelinin tamamı ödendiğinde, sözleşmede tanımlı tüm çıktılar (kaynak kod, tasarım dosyaları, içerikler) müşteriye devredilir. Üçüncü taraf lisanslı bileşenler (örneğin fontlar, stok görseller) kendi lisans koşullarına tabidir; bu konuda bilgilendirme yapılır. Devir sonrası projeyi kendi ekibiniz veya başka bir tarafla sürdürmeniz mümkündür; gerekli dokümantasyon ve teslim paketi sağlanır."
+      },
+      "maintenance": {
+        "question": "Uzun vadeli bakım ve güncelleme sözleşmeleri mevcut mudur?",
+        "answer": "Proje teslimi sonrası yıllık veya aylık bakım sözleşmeleri sunuyoruz. Bu sözleşmeler teknik güncellemeler, güvenlik yamaları, yedekleme ve izleme hizmetlerini kapsayabilir; kapsam ve ücret sizin kullanım profilinize göre belirlenir. Uzun vadeli bakım, projenizin güvenli ve güncel kalmasını sağlar ve acil müdahalelerde öncelikli destek imkânı sunar."
+      }
+    }
+  },
+  "NotFound": {
+    "title": "Sayfa bulunamadı",
+    "code": "404",
+    "message": "Aradığınız sayfa taşınmış, silinmiş veya hiç var olmamış olabilir.",
+    "backHome": "Anasayfaya dön",
+    "goBack": "Geri git"
   }
 }

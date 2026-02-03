@@ -101,6 +101,7 @@
   --sidebar-accent-foreground: oklch(0.20 0.01 250);
   --sidebar-border: oklch(0.90 0.005 250);
   --sidebar-ring: oklch(0.20 0.01 250);
+  --spotlight-stroke: #a1a1aa;
 }
 
 .dark {
@@ -159,6 +160,7 @@
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.25 0.01 250);
   --sidebar-ring: oklch(0.70 0.01 250);
+  --spotlight-stroke: #52525b;
 }
 
 @layer base {
@@ -169,4 +171,133 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  ::selection {
+  background-color: #f97316; /* Preloader'daki turuncu (orange-500) */
+  color: #ffffff;
+}
+}
+
+/* Özel imleç: tablet ve üzeri (768px+) cihazlarda varsayılan imleci gizle */
+@media (min-width: 768px) {
+  body {
+    cursor: none; /* Varsayılan imleçi gizle */
+  }
+
+  /* Linklerde de el işaretini gizle ki bizim özel imleç görünsün */
+  a,
+  button,
+  [role="button"] {
+    cursor: none;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+/* PortfolioStream: iki yön, iki hız, hover'da duraklama */
+@keyframes portfolio-marquee-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes portfolio-marquee-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-portfolio-right {
+  animation: portfolio-marquee-right 42s linear infinite;
+}
+
+.animate-portfolio-left {
+  animation: portfolio-marquee-left 58s linear infinite;
+}
+
+/* Kartlardan birine hover'da her iki şerit de dursun */
+.portfolio-stream:has(.portfolio-card:hover) .portfolio-strip-inner {
+  animation-play-state: paused;
+}
+
+/* ProcessTimeline tech logoları: marka rengi arka plan + neon gölge (override edilmesin) */
+.process-timeline-tech-logo {
+  background-color: var(--logo-bg) !important;
+  box-shadow: var(--logo-glow) !important;
+}
+
+/* ========== Custom Scrollbar ========== */
+/* Light mode — sadece html'de .dark yokken (html:not(.dark)) */
+html:not(.dark),
+html:not(.dark) * {
+  scrollbar-width: thin;
+  scrollbar-color: #a1a1aa #f4f4f5;
+}
+
+html:not(.dark)::-webkit-scrollbar,
+html:not(.dark) *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html:not(.dark)::-webkit-scrollbar-track,
+html:not(.dark) *::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+html:not(.dark)::-webkit-scrollbar-thumb,
+html:not(.dark) *::-webkit-scrollbar-thumb {
+  background: #a1a1aa;
+  border-radius: 99px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+html:not(.dark)::-webkit-scrollbar-thumb:hover,
+html:not(.dark) *::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
+  background-clip: content-box;
+}
+
+/* Dark mode — html.dark veya .dark içindeki öğeler */
+html.dark,
+.dark * {
+  scrollbar-color: #27272a #09090b;
+}
+
+html.dark::-webkit-scrollbar,
+.dark *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark::-webkit-scrollbar-track,
+.dark *::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+html.dark::-webkit-scrollbar-thumb,
+.dark *::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
+
+html.dark::-webkit-scrollbar-thumb:hover,
+.dark *::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
 }
