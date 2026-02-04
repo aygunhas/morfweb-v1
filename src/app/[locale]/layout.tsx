@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import { CookieConsent } from "@/components/CookieConsent";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -55,6 +56,7 @@ export default async function RootLayout({
               <Navbar />
               {children}
               <Footer />
+              <CookieConsent />
             </PreloaderGate>
           </ThemeProvider>
         </NextIntlClientProvider>

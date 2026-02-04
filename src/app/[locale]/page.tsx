@@ -15,17 +15,10 @@ export default function Home() {
     <main>
       <Hero />
 
-      {/* Slogan alanı — alt boşluk section padding ile; gradient bütünlüğü korunur */}
-      <section className="bg-gradient-to-b from-white to-zinc-100 pb-8 pt-4 dark:from-zinc-950 dark:to-black sm:pb-10 lg:pb-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="text-left font-medium text-zinc-900 dark:text-white"
-            style={{
-              fontSize: "62px",
-              lineHeight: "62px",
-              letterSpacing: "-3.1px",
-            }}
-          >
+      {/* Slogan alanı — mobilde daha küçük tipografi */}
+      <section className="bg-gradient-to-b from-white to-zinc-100 pb-8 pt-6 dark:from-zinc-950 dark:to-black sm:px-6 sm:pb-10 sm:pt-8 lg:px-8 lg:pb-12">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          <div className="text-left font-medium leading-[1.1] tracking-tight text-zinc-900 dark:text-white text-[clamp(2rem,8vw,3.875rem)] sm:text-[clamp(2.5rem,6vw,62px)]">
             <BlurReveal
               text="Tasarla. Geliştir. Yayınla."
               block
@@ -33,7 +26,7 @@ export default function Home() {
               delay={0.2}
             />
           </div>
-          <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
             Sürecin her adımında yanınızdayız. Fikirden yayına, uçtan uca dijital partneriniz.
           </p>
         </div>

@@ -170,6 +170,9 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
   }
   ::selection {
   background-color: #f97316; /* Preloader'daki turuncu (orange-500) */
@@ -300,4 +303,13 @@ html.dark::-webkit-scrollbar-thumb,
 html.dark::-webkit-scrollbar-thumb:hover,
 .dark *::-webkit-scrollbar-thumb:hover {
   background: #52525b;
+}
+
+/* Mobil: yatay kaydırma çubuğunu gizle (görsel temizlik) */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

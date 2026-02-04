@@ -65,7 +65,7 @@ export function CustomCursor() {
 
   return (
     <div
-      className="pointer-events-none fixed left-0 top-0 z-[9999] hidden md:block"
+      className="pointer-events-none fixed left-0 top-0 z-[10000] hidden md:block"
       aria-hidden
     >
       {/* Küçük nokta — anlık takip */}

@@ -22,23 +22,23 @@ export function Hero() {
         aria-hidden
       />
       <div
-        className={`relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-4 text-center transition-opacity duration-[2000ms] ease-in-out sm:px-6 lg:px-8 ${
+        className={`relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-5 text-center transition-opacity duration-[2000ms] ease-in-out sm:px-6 lg:px-8 ${
           canShowContent ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-foreground md:text-7xl">
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           Modern Web ve Mobil
           <br />
           <span className="bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-500 dark:from-white dark:via-zinc-200 dark:to-zinc-400 bg-clip-text text-transparent">
             Uygulama Çözümleri.
           </span>
         </h1>
-        <p className="mt-6 text-lg text-muted-foreground">
+        <p className="mt-4 text-base text-muted-foreground sm:mt-6 sm:text-lg">
           İşletmeniz için hızlı, güvenli ve yönetim panelli web siteleri geliştiriyoruz.
           <br />
           Karmaşık süreçlerle değil, işinize değer katan sonuçlarla ilgileniyoruz.
         </p>
-        <div className="mt-8 flex w-full flex-col gap-4 sm:flex-row sm:justify-center">
+        <div className="mt-6 flex w-full flex-col gap-3 sm:mt-8 sm:flex-row sm:justify-center sm:gap-4">
           <Button asChild size="lg" className="w-full sm:w-auto">
             <Link href="/contact">
               Projeye Başla
